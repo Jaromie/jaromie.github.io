@@ -7,20 +7,44 @@
 	<body>
 		<nav>
     		<ul>
-        		<li><a href="/">Home</a></li>
+        		<li><a href="/">Survey</a></li>
 	        	<li><a href="https://www.music-mining.com/">music-mining.com</a></li>
     		</ul>
 		</nav>
 		<div class="container">
-    		<div class="blurb">
         		<h1>Music Mining - Discovery Survey</h1>
 				<p>There are many music stories to tell, let me know what <em>sparks your interest!</em> <a href="https://www.music-mining.com">See you on the blog!</a></p>
-    		</div><!-- /.blurb -->
-		</div><!-- /.container -->
+		</div><!-- /.intro -->
+		<div class="form">
+			<form>
+				<h2>Which database should I dive in first?</h2>
+				<input type="radio" id="discogs" name="database" value="discogs">
+				<label for="discogs">Discogs - Artists, Releases and Labels</label><br>
+  				<input type="radio" id="spotify" name="database" value="spotify">
+				<label for="spotify">Spotify - Music Metadata</label><br>
+				<input type="radio" id="genius" name="database" value="genius">
+				<label for="genius">Genius - Song Lyrics</label><br>
+				<br>
+				<h2>If you could take only one album to a remote island, it would be some:</h2>
+				<input type="radio" id="jazz" name="musical-genre" value="jazz">
+				<label for="jazz">Jazz</label><br>
+  				<input type="radio" id="hip-hop" name="musical-genre" value="hip-hop">
+				<label for="hip-hop">Hip-Hop</label><br>
+				<input type="radio" id="reggae" name="musical-genre" value="reggae">
+				<label for="reggae">Reggae</label><br>
+				<input type="radio" id="electro" name="musical-genre" value="electro">
+				<label for="electro">Electronic Music</label><br>
+				<br>
+				
+  <input type="radio" id="other" name="gender" value="other">
+  <label for="other">Other</label>
+</form>
+			</form>
+		</div><!-- /.form -->
 		<footer>
     		<ul>
         		<li><a href="mailto:contact@music-mining.com">email</a></li>
-        		<li><a href="https://github.com/Jaromie/jaromie.github.io">Github Repo</a></li>
+        		<li><a href="https://github.com/Jaromie/jaromie.github.io">github repo</a></li>
 			</ul>
 		</footer>
 	</body>
