@@ -52,9 +52,9 @@ ul.posts li {
     font-family:'Roboto', 'Helvetica', 'Arial', 'Sans-Serif';
 }
 input[type=submit] {
-   background: #ffffff,
+   background: #e3cb16,
    font-family:'Roboto', 'Helvetica', 'Arial', 'Sans-Serif';
-   color: #e3cb16;
+   color: #ffffff;
    font-weight: bold;
    font-size: 2em;
 }
