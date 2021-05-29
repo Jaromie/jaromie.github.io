@@ -30,23 +30,23 @@
 				<p>There are many music stories to tell, let me know what <em>sparks your interest!</em> <a href="https://www.music-mining.com">See you on the blog!</a></p>
 		</div><!-- /.intro -->
 		<div class="form">
-			<form>
+			<form action="#">
 				<h2>The first database you would explore is:</h2>
-				<input type="radio" id="discogs" name="database" value="discogs" onclick="dataLayer.push({'database': 'discogs'});">
+				<input type="radio" id="discogs" name="database" value="discogs" onclick="dataLayer.push({'answer': {'database':'discogs'}});">
 				<label for="discogs">Discogs - Artists, Releases and Labels</label><br>
-  				<input type="radio" id="spotify" name="database" value="spotify" onclick="dataLayer.push({'database': 'spotify'});">
+  				<input type="radio" id="spotify" name="database" value="spotify" onclick="dataLayer.push({'answer': {'database':'spotify'}});">
 				<label for="spotify">Spotify - Music Metadata</label><br>
-				<input type="radio" id="genius" name="database" value="genius" onclick="dataLayer.push({'database': 'genius'});">
+				<input type="radio" id="genius" name="database" value="genius" onclick="dataLayer.push({'answer': {'database':'genius'}});">
 				<label for="genius">Genius - Song Lyrics</label><br>
 				<br>
 				<h2>If you could take only one album to a remote island, it would be some:</h2>
-				<input type="radio" id="jazz" name="musical-genre" value="jazz" onclick="dataLayer.push({'musical-genre': 'jazz'});">
+				<input type="radio" id="jazz" name="musical-genre" value="jazz" onclick="dataLayer.push({'answer': {'musical-genre':'jazz'}});">
 				<label for="jazz">Jazz</label><br>
-  				<input type="radio" id="hip-hop" name="musical-genre" value="hip-hop" onclick="dataLayer.push({'musical-genre': 'hip-hop'});">
+  				<input type="radio" id="hip-hop" name="musical-genre" value="hip-hop" onclick="dataLayer.push({'answer': {'musical-genre':'hip-hop'}});">
 				<label for="hip-hop">Hip-Hop</label><br>
-				<input type="radio" id="reggae" name="musical-genre" value="reggae" onclick="dataLayer.push({'musical-genre': 'reggae'});">
+				<input type="radio" id="reggae" name="musical-genre" value="reggae" onclick="dataLayer.push({'answer': {'musical-genre':'reggae'}});">
 				<label for="reggae">Reggae</label><br>
-				<input type="radio" id="electro" name="musical-genre" value="electro" onclick="dataLayer.push({'musical-genre': 'electro'});">
+				<input type="radio" id="electro" name="musical-genre" value="electro" onclick="dataLayer.push({'answer': {'musical-genre':'electro'}});">
 				<label for="electro">Electronic Music</label><br>
 				<br>
 				<input type="submit" value="I am done!"  onclick="dataLayer.push({'event': 'submitted'});">
