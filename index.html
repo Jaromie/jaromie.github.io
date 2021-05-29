@@ -1,10 +1,24 @@
 <!DOCTYPE html>
 <html>
 	<head>
+		<script>
+		dataLayer = [];
+		</script>
+		<!-- Google Tag Manager -->
+		<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+		new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+		j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+		'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+		})(window,document,'script','dataLayer','GTM-NFWGLB5');</script>
+		<!-- End Google Tag Manager -->
 		<title>Music Mining - Discovery Survey</title>
 		<link rel="stylesheet" type="text/css" href="/css/main.css">
 	</head>
 	<body>
+		<!-- Google Tag Manager (noscript) -->
+		<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-NFWGLB5"
+		height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+		<!-- End Google Tag Manager (noscript) -->
 		<nav>
     		<ul>
         		<li><a href="/">Survey</a></li>
@@ -17,25 +31,25 @@
 		</div><!-- /.intro -->
 		<div class="form">
 			<form>
-				<h2>The first database you would dive in is:</h2>
-				<input type="radio" id="discogs" name="database" value="discogs">
+				<h2>The first database you would explore is:</h2>
+				<input type="radio" id="discogs" name="database" value="discogs" onclick="dataLayer.push({'database': 'discogs'});">
 				<label for="discogs">Discogs - Artists, Releases and Labels</label><br>
-  				<input type="radio" id="spotify" name="database" value="spotify">
+  				<input type="radio" id="spotify" name="database" value="spotify" onclick="dataLayer.push({'database': 'spotify'});">
 				<label for="spotify">Spotify - Music Metadata</label><br>
-				<input type="radio" id="genius" name="database" value="genius">
+				<input type="radio" id="genius" name="database" value="genius" onclick="dataLayer.push({'database': 'genius'});">
 				<label for="genius">Genius - Song Lyrics</label><br>
 				<br>
 				<h2>If you could take only one album to a remote island, it would be some:</h2>
-				<input type="radio" id="jazz" name="musical-genre" value="jazz">
+				<input type="radio" id="jazz" name="musical-genre" value="jazz" onclick="dataLayer.push({'musical-genre': 'jazz'});">
 				<label for="jazz">Jazz</label><br>
-  				<input type="radio" id="hip-hop" name="musical-genre" value="hip-hop">
+  				<input type="radio" id="hip-hop" name="musical-genre" value="hip-hop" onclick="dataLayer.push({'musical-genre': 'hip-hop'});">
 				<label for="hip-hop">Hip-Hop</label><br>
-				<input type="radio" id="reggae" name="musical-genre" value="reggae">
+				<input type="radio" id="reggae" name="musical-genre" value="reggae" onclick="dataLayer.push({'musical-genre': 'reggae'});">
 				<label for="reggae">Reggae</label><br>
-				<input type="radio" id="electro" name="musical-genre" value="electro">
+				<input type="radio" id="electro" name="musical-genre" value="electro" onclick="dataLayer.push({'musical-genre': 'electro'});">
 				<label for="electro">Electronic Music</label><br>
 				<br>
-				<input type="submit" value="I am done!">
+				<input type="submit" value="I am done!"  onclick="dataLayer.push({'event': 'submitted'});">
 				<br>
 				<br>
 			</form>
